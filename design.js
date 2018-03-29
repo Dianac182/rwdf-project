@@ -11,9 +11,4 @@ main.addEventListener('click', function() {
     drawer.classList.remove('open');
 });
 
-/*$(window).on('resize', function() {
-    if ($(window).width() >= 600) {
-        menu.remove();
-    }
-});*/
 
