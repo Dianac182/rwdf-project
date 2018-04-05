@@ -179,19 +179,20 @@ main {
 
 .top-news {
   height: 300px;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   padding: 1em;
+  width: 100%;
 }
 
 .news__title {
   font-weight: 300;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   line-height: 24px;
   font-size: 16px;
 }
 
 .top-news__item {
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   padding: 1em 0;
   line-height: 19.2px;
 }
@@ -360,7 +361,7 @@ main {
  */
 
 footer {
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
   padding: 1em;
   width: 100%;
 }
