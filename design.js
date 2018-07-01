@@ -3,12 +3,12 @@ const main = document.querySelector('main');
 const drawer = document.querySelector('#drawer');
 
 menu.addEventListener('click', function(e) {
-    drawer.classList.toggle('open');
-    e.stopPropagation();
+	drawer.classList.toggle('open');
+	e.stopPropagation();
 });
 
 main.addEventListener('click', function() {
-    drawer.classList.remove('open');
+  drawer.classList.remove('open');
 });
 
 

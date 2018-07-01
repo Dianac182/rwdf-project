@@ -1,121 +1,118 @@
 .content {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header__title {
+	vertical-align: bottom;
 }
 
 .header__menu {
-    display: none;
+	display: none;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (max-width: 460px) {
-    .header__inner {
-        align-items: center;
-    }
+	.header__inner {
+		align-items: center;
+	}
 
-    .header__logo {
-        margin-right: 0.5em;
-    }
+	.header__logo {
+		margin-right: 0.5em;
+	}
 
-    .header__title {
-        margin-left: 0;
-        font-size: 2em;
-        vertical-align: bottom;
-    }
+	.header__title {
+		margin-left: 0;
+		font-size: 1.5em;
+	}
 
-    .header__menu {
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 15px;
-        padding: 0;
-        font-size: 30px;
-        color: #cfc6ad;
-    }
+	.header__menu {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin: 15px;
+		padding: 0;
+		font-size: 30px;
+		color: #cfc6ad;
+	}
 
-    .nav {
-        width: 250px;
-        background-color: #fff;
-        z-index: 1;
-        position: absolute;
-        /* This trasform moves the drawer off canvas. */
-        -webkit-transform: translate(-300px, 0);
-        transform: translate(-300px, 0);
-        /* Optionally, we animate the drawer. */
-        transition: transform 0.3s ease;
-    }
+	.nav {
+		width: 250px;
+		background-color: #fff;
+		z-index: 1;
+		position: absolute;
+		/* This trasform moves the drawer off canvas. */
+		-webkit-transform: translate(-300px, 0);
+		transform: translate(-300px, 0);
+		/* Optionally, we animate the drawer. */
+		transition: transform 0.3s ease;
+	}
 
-    nav.open {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
+	nav.open {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
 
-    .nav__item {
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid #e0e0e0;
-        text-align: left;
-    }
+	.nav__item {
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #e0e0e0;
+		text-align: left;
+	}
 
-    footer {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
+	footer li {
+		margin: 0.8em;
+	}
 
-    footer li {
-        margin: 1em;
-    }
-
-    footer a {
-        padding: 0;
-    }
+	footer a {
+		padding: 0;
+		font-size: 0.9em;
+	}
 }
 
-@media  screen and (min-width: 525px) {
-    .hero {
-        width: 65%;
-        order: 1;
-    }
+@media  screen and (min-width: 600px) {
+	.hero {
+		width: 60%;
+		order: 1;
+	}
 
-    .weather {
-        width: 35%;
-        order: 2;
-    }
+	.weather {
+		width: 40%;
+		order: 2;
+	}
 
-    .top-news, .scores, .recent-news {
-        width: 100%;
-        order: 4;
-    }
+	.top-news, .scores, .recent-news {
+		width: 100%;
+		order: 4;
+	}
 }
 
 @media screen and (min-width: 750px) {
-    .hero, .top-news {
-        width: 50%;
-        order: 2;
-    }
+	.hero, .top-news {
+		width: 50%;
+		order: 2;
+	}
 
-    .weather {
-        width: 35%;
-        order: 3;
-    }
+	.weather {
+		width: 35%;
+		order: 3;
+	}
 
-    .scores {
-        width: 65%;
-        order: 4;
-    }
+	.scores {
+		width: 65%;
+		order: 4;
+	}
 }
 
 @media screen and (min-width: 825px) {
-    .header__inner,.nav, main {
-        width: 825px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+	.header__inner,.nav, main {
+		width: 825px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
-
-
-
-
-
-
