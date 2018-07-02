@@ -1,0 +1,27 @@
+{
+  "name": "rwdf-project",
+  "version": "1.0.0",
+  "description": "Building a home town app (Brighton) using flexbox, project for the [Responsive Web Design Fundamentals](https://eu.udacity.com/course/responsive-web-design-fundamentals--ud893) course from Udacity.",
+  "main": "design.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dianac182/rwdf-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dianac182/rwdf-project/issues"
+  },
+  "homepage": "https://github.com/Dianac182/rwdf-project#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-responsive-images": "^1.10.1"
+  }
+}

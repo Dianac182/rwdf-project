@@ -27,7 +27,79 @@ body {
 }
 
 .recent-news {
+	padding-bottom: 0;
 	width: 100%;
+}
+
+.snippet {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.snippet__title {
+	margin-bottom: 1em;
+	width: 100%;
+	order: 1;
+}
+	
+.snippet__thumbnail {
+	width: 25%;
+	order: 2;
+}
+
+.snippet__thumbnail img {
+	width: 100%;
+}
+
+.snippet p {
+	text-align: left;
+	margin-top: 0;
+	width: 70%;
+	order: 3;
+	max-height: 5em;
+}
+
+/* styles for '...' */ 
+.snippet p {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.snippet p:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.snippet p:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
 }
 
 @media screen and (max-width: 460px) {
@@ -49,6 +121,10 @@ body {
 
 	.snippet__thumbnail {
 		display: none;
+	}
+
+	.snippet p {
+		width: 95%;
 	}
 }
 
