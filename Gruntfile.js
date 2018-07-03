@@ -10,14 +10,13 @@ module.exports = function(grunt) {
 					engine: 'im',
 					sizes: [{
 						name: 'small',
-          	width: 200
+						width: 400
+					},{
+						name: 'big',
+						width: 900
 					}]
 				},
 
-				/*
-				You don't need to change this part if you don't change
-				the directory structure.
-				*/
 				files: [{
 					expand: true,
 					src: ['dog.jpg'],
@@ -30,7 +29,7 @@ module.exports = function(grunt) {
 		/* Clear out the images directory if it exists */
 		clean: {
 			dev: {
-				src: ['images/dog-small.jpg'],
+				src: ['images/dog-small.jpg', 'images/dog-big.jpg'],
 			},
 		},
 
